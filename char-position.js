@@ -1,11 +1,9 @@
 function countLetter(str) {
   str = str.split(' ').join('');
-  //console.log(str);
   var storedLetters = {};
 
   for (var i = 0; i < str.length; i++) {
-    var char = str[i]
-    //var letterPos = [];
+    var char = str[i];
     if (storedLetters.hasOwnProperty(char)) {
       storedLetters[char]['numOfOccur'] += 1;
       storedLetters[char]['occurPos'].push(i);
